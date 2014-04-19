@@ -1,0 +1,34 @@
+WARNING: There is XML that may not have translated correctly in these files:
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/components/particles/PDParticleSystemComponent.hx
+WARNING: Required constructor was added for member var initialization
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/ComponentReferenceUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/RenderablesUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet3D/src/cadet3D/util/NullBitmapCubeTexture.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/BitmapDataUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/components/renderers/RendererInvalidationTypes.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/ComponentUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/NullBitmap.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/tests/transform2D/src/util/TransformUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/TextureUtils.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/QuadraticBezierUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/Deg2rad.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/VertexBooleanUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/NullBitmapTexture.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet3D/src/cadet3D/assets/CadetEngine3DIcons.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/RasterUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/DisplayUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/Rad2deg.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/LinearPathUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet3D/src/cadet3D/util/NullBitmapTexture.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/VertexUtil.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/util/Equations.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet/src/cadet/assets/CadetEngineIcons.hx
+FATAL: These files have a Vector.<T> call, which was not handled. Check versus source file!
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet3D/src/cadet3D/serialize/SerializedObject.hx
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet3D/src/cadet3D/serialize/AS3Serializer.hx
+WARNING: Unhandled ELabel(found)
+        C:/Users/edward.silverton/github/as3hx/../CadetEngine-hx/cadet2D/src/cadet2D/util/LinearPathUtil.hx
+
+ERRORS: These files were not written due to source parsing errors:
+In C:/Users/edward.silverton/github/as3hx/../CadetEngine-as/cadet/src/cadet/operations/GetTemplateAndMergeXMLOperation.as(88) : Unexpected *
+In C:/Users/edward.silverton/github/as3hx/../CadetEngine-as/cadet/src/cadet/operations/GetTemplatesAndMergeXMLOperation.as(42) : Unexpected *
