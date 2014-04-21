@@ -37,6 +37,7 @@ class ComponentFactory extends FactoryResource
 	private var _visible : Bool;  
 	// If false, will not appear in 'add-component' dialogue.  
 	public var validators : Array<IComponentValidator>;
+	
 	public function new(type : Class<Dynamic>, label : String, category : String = null, icon : Class<Dynamic> = null, requiredParentType : Class<Dynamic> = null, maxSiblingsOfThisType : Int = -1, requiredSiblingTypes : Array<Dynamic> = null, compatibleContextType : Class<Dynamic> = null, visible : Bool = true)
     {
 		super(type, label, icon); 
