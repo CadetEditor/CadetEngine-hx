@@ -1,4 +1,14 @@
-// =================================================================================================  //    //	CadetEngine Framework    //	Copyright 2012 Unwrong Ltd. All Rights Reserved.    //    //	This program is free software. You can redistribute and/or modify it    //	in accordance with the terms of the accompanying license agreement.    //    // =================================================================================================  package cadet3dphysics.components.processes;
+// =================================================================================================  
+//    
+//	CadetEngine Framework    
+//	Copyright 2012 Unwrong Ltd. All Rights Reserved.    
+//    
+//	This program is free software. You can redistribute and/or modify it    
+//	in accordance with the terms of the accompanying license agreement.    
+//    
+// =================================================================================================  
+
+package cadet3dphysics.components.processes;
 
 import cadet3dphysics.components.processes.AWPDynamicsWorld;
 import cadet3dphysics.components.processes.AWPRigidBody;
@@ -6,22 +16,58 @@ import cadet3dphysics.components.processes.Component;
 import cadet3dphysics.components.processes.Dictionary;
 import cadet3dphysics.components.processes.ISteppableComponent;
 import cadet3dphysics.components.processes.RigidBodyBehaviour;
-import awayphysics.dynamics.AWPDynamicsWorld;import awayphysics.dynamics.AWPRigidBody;import cadet.core.Component;import cadet.core.ISteppableComponent;import cadet3dphysics.components.behaviours.RigidBodyBehaviour;import nme.utils.Dictionary;class PhysicsProcess extends Component implements ISteppableComponent
-{private var _physicsWorld : AWPDynamicsWorld;private var behaviourTable : Dictionary;private var _timeStep : Float = 1.0 / 60;public function new(name : String = "PhysicsProcess")
-    {super(name);init();
-    }private function init() : Void{  /*
-			scaleFactor = 0.02;
-			var bounds:b2AABB = new b2AABB();
-			bounds.lowerBound = new b2Vec2( -10000, -10000 );
-			bounds.upperBound = new b2Vec2( 10000, 10000 );
-			_box2D = new b2World( bounds, new b2Vec2( 0, 0 ), true );
-			_box2D.SetContactListener(new PhysicsProcessContactListener(this));
-			_box2D.SetDestructionListener(new PhysicsProcessDestructionListener(this));
-			
-			gravity = 6;
-			*/    // init the physics world  _physicsWorld = AWPDynamicsWorld.getInstance();_physicsWorld.initWithDbvtBroadphase();behaviourTable = new Dictionary(true);
-    }public function addRigidBody(behaviour : RigidBodyBehaviour, rigidBody : AWPRigidBody) : Void{Reflect.setField(behaviourTable, Std.string(rigidBody), behaviour);_physicsWorld.addRigidBody(rigidBody);
-    }public function removeRigidBody(rigidBody : AWPRigidBody) : Void{;_physicsWorld.removeRigidBody(rigidBody);
-    }public function step(dt : Float) : Void{_physicsWorld.step(_timeStep, 1, _timeStep);
-    }
+import awayphysics.dynamics.AWPDynamicsWorld;
+import awayphysics.dynamics.AWPRigidBody;
+import cadet.core.Component;
+import cadet.core.ISteppableComponent;
+import cadet3dphysics.components.behaviours.RigidBodyBehaviour;
+import nme.utils.Dictionary;
+
+class PhysicsProcess extends Component implements ISteppableComponent
+{
+	private var _physicsWorld : AWPDynamicsWorld;
+	private var behaviourTable : Dictionary;
+	private var _timeStep : Float = 1.0 / 60;
+	
+	public function new(name : String = "PhysicsProcess")
+	{
+		super(name);
+		init();
+	}
+	
+	private function init() : Void
+	{  
+		/*
+		scaleFactor = 0.02;
+		var bounds:b2AABB = new b2AABB();
+		bounds.lowerBound = new b2Vec2( -10000, -10000 );
+		bounds.upperBound = new b2Vec2( 10000, 10000 );
+		_box2D = new b2World( bounds, new b2Vec2( 0, 0 ), true );
+		_box2D.SetContactListener(new PhysicsProcessContactListener(this));
+		_box2D.SetDestructionListener(new PhysicsProcessDestructionListener(this));		
+
+		gravity = 6;
+		*/    
+		
+		// init the physics world  
+		_physicsWorld = AWPDynamicsWorld.getInstance();
+		_physicsWorld.initWithDbvtBroadphase();
+		behaviourTable = new Dictionary(true);
+	}
+	
+	public function addRigidBody(behaviour : RigidBodyBehaviour, rigidBody : AWPRigidBody) : Void
+	{
+		Reflect.setField(behaviourTable, Std.string(rigidBody), behaviour);
+		_physicsWorld.addRigidBody(rigidBody);
+	}
+	
+	public function removeRigidBody(rigidBody : AWPRigidBody) : Void
+	{
+		_physicsWorld.removeRigidBody(rigidBody);
+	}
+	
+	public function step(dt : Float) : Void
+	{
+		_physicsWorld.step(_timeStep, 1, _timeStep);
+	}
 }
