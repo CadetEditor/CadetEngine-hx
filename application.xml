@@ -3,7 +3,7 @@
 	<!-- NMML reference: https://gist.github.com/1763850 -->
 	
 	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
-	<meta title="CadetEngine-hx" package="CadetEnginehx" version="1.0.0" company="@edsilv" />
+	<meta title="CadetEngine-hx" package="com.unwrong.cadetEngine" version="1.0.0" company="@edsilv" />
 	
 	<!-- output -->
 	<app main="Main" file="CadetEnginehx" path="bin" />
@@ -19,7 +19,7 @@
 	
 	<!-- assets -->
 	<icon path="assets/openfl.svg" />
-	<assets path="assets/img" rename="img" />
+	<!--<assets path="assets/img" rename="img" />-->
 	
 	<!-- optimize output
 	<haxeflag name="-dce full" /> -->
